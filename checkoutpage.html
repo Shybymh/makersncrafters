@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+        <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+        
+        <title>Neighborhood Makers and Crafters</title>
+
+    </head>
+
+    <body>
+        <header>
+            <img src="img/header.jpg" class="img-fluid" alt="A photo of neighborhood">
+        </header>
+         <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+            <h4><a class="nav-link text-light d" href="index.html">Neighborhood Makers and Crafters</a></h4>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="paintings.html">Paintings</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="accessories.html">Accessories</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="jewellery.html">Jewellery</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artists.html">Artists</a>
+                    </li>
+                    
+                    <span class="navbar-text ml-auto">
+                        <a role="button" data-toggle="modal" data-target="#loginModal">Member Login</a>
+                    </span>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <!--login modal-->
+
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Login</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="loginName">Login Name</label>
+                                        <input type="text" class="form-control form-control-sm" id="loginName" placeholder="Enter login name">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="loginPassword">Password</label>
+                                        <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label">Remember me</label> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Check out form -->
+        <div class="container">
+            <div class="row row-content">
+                <div class="col-12 pt-4">
+                    <h2>Enter your delivery address</h2>
+                    <hr />
+                </div>
+                <div class="col-md-10">
+                    <form>
+                        <div class="form-group row">
+                            <label for="firstName" class="col-md-2 col-form-label" >First Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastName" class="col-md-2 col-form-label" >Last Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required/>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <label for="streetAddress" class="col-md-2 col-form-label" >Street address</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="streetAddress" name="streetAddress" placeholder="Street address" required/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="aptNo" class="col-2 col-form-label" >Apt no. </label>
+                            <div class="col-4">
+                                <input type="text" class="form-control" id="aptNo" name="aptno" placeholder="Apt no."/>
+                            </div>
+                            <label for="city" class="col-2 col-form-label" >City </label>
+                            <div class="col-4">
+                                <input type="text"  class="form-control" id="city" name="city" placeholder="City" required/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="state" class="col-2 col-form-label" >State </label>
+                            <div class="col-4">
+                                <input type="text" class="form-control" id="state" name="state" placeholder="State" required/>
+                            </div>
+                            <label for="zipCode1" class="col-2 col-form-label" >Zipcode </label>
+                            <div class="col-4">
+                                <input type="text"  class="form-control" id="zipCode1" name="zipcode" placeholder="Zipcode" required/>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="areaCode" class="col-md-2 col-form-label" >Contact Tel.</label>
+                            <div class="col-5 col-md-3">
+                                <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area Code" required/>
+                            </div>
+                            <div class="col-7">
+                                <input type="tel"  class="form-control" name="telNum" placeholder="Tel. number" required/>
+                            </div>
+                        </div> 
+                        <div class="form-group row">
+                            <label for="email" class="col-md-2 col-form-label" >Email</label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col 0ffset-md-2">
+                                Do you want to customize the item?
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes"/>
+                                    <label for="contactYes" class="form-check-label" >Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="No"/>
+                                    <label for="contactNo" class="form-check-label">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="feedback" class="col-md-2 col-form-label" >Specifications</label>
+                            <div class="col-md-10">
+                                <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col ">Payment Type
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="creditcard" name="paymentRadios" value="creditcard" required/>
+                                    <label for="creditcard" class="form-check-label" ><i class="fa fa-lg fa-credit-card"></i>Credit Card</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="paypal" name="paymentRadios" value="paypal"/>
+                                    <label for="paypal" class="form-check-label"><i class="fa fa-lg fa-paypal"></i>Paypal</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                
+                   
+                    <!-- accordion -->
+                    <div class="accordion pb-4" id="cardDetails">
+                        <div class="credit-card">
+                            
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#creditcard">
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label for="name" class="col-md-2 col-form-label" >Name</label>
+                                            <div class="col-md-10">
+                                                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="cardNo" class="col-2 col-form-label" >Card no. </label>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control" id="cardNo" name="cardno" placeholder="Card no." required/>
+                                            </div>
+                                            <label for="cvv" class="col-2 col-form-label" >CVV </label>
+                                            <div class="col-2">
+                                                <input type="text"  class="form-control" id="cvv" name="cvv" placeholder="CVV" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="expiry" class="col-2 col-form-label" >Card expiry</label>
+                                            <div class="col-4">
+                                                <input type="date" class="form-control" id="expiry" name="expiry" placeholder="Card expiry" required/>
+                                            </div>
+                                            <label for="zipcode2" class="col-2 col-form-label" >Zipcode</label>
+                                            <div class="col-4">
+                                                <input type="text"  class="form-control" id="zipcode2" name="zipcode" placeholder="Zipcode" required/>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2  col-md-10">
+                            <a type="submit" class="btn btn-primary" data-toggle="modal" data-target="#confirmation" >Submit</a>
+                            <a type="button" href="index.html" class="btn btn-secondary" data-dismiss="modal">Cancel</a> 
+                        </div>
+                    </div>
+                </div>             
+            </div>
+        </div> 
+        <!-- Confirmation modal <button type="submit" class="btn btn-primary" >Submit</button>   -->
+
+        <div id="confirmation" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header bg-primary">
+                            
+                            <h3 class="modal-title text-justify">Confirmation</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col-12 form-group">
+                                            <h5>Thank you!. Your order is confirmed.</h5>
+                                        </div> 
+                                        <div class="col-12 form-group">
+                                            <a type="button" class="btn btn-primary" href="index.html">OK</a>
+                                        </div>
+                                    </div>
+                                </form>
+                                
+                            </div>
+        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 text-center">
+                        <h5 class=" text-dark">Connect with us</h5>
+                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <div class="col-sm-6 text-center text-dark">
+                        <i class="fa fa-phone fa-lg text-primary"></i> 1-234-567-8910<br />
+                        <i class="fa fa-envelope fa-lg text-primary"></i>neighborhoodmandc@gmail.com
+                    </div>
+                </div>
+            </div>
+        </footer> 
+        
+  
+      <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  
+     
+  
+    </body>
+  </html>

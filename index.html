@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+      
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+      
+    <title>Neighborhood Makers and Crafters</title>
+
+  </head>
+
+  <body>
+    <header>
+      <img src="img/header4.jpg" class="img-fluid" alt="A photo of neighborhood">
+    </header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+      <h4><a class="nav-link text-light d" href="#">Neighborhood Makers and Crafters</a></h4>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Categories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="paintings.html">Paintings</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="accessories.html">Accessories</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="jewellery.html">Jewellery</a>
+              </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="artists.html">Artists</a>
+          </li>
+          
+          <span class="navbar-text ml-auto">
+              <a role="button" data-toggle="modal" data-target="#loginModal">Member Login</a>
+          </span>
+
+      </ul>
+      
+      </div>
+    </nav>
+    <!--login modal-->
+
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h3 class="modal-title">Login</h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <div class="container-fluid">
+                      <form>
+                          <div class="form-row">
+                              <div class="form-group col-12">
+                                  <label class="sr-only" for="loginName">Login Name</label>
+                                  <input type="text" class="form-control form-control-sm" id="loginName" placeholder="Enter login name">
+                              </div>
+                              <div class="form-group col-12">
+                                  <label class="sr-only" for="loginPassword">Password</label>
+                                  <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                              </div>
+                              <div class="col">
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="checkbox">
+                                      <label class="form-check-label">Remember me</label> 
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-row">
+                              <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                              <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                          </div>
+                      </form>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+    </div>
+  
+    
+    <!--<div class="row">-->
+        
+    <h2 class="text-center" id="localArtist">Support local artists, every small purchase makes a big difference</h2>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col text-center bg-light">
+          <h2 >Categories</h2>
+        </div>
+      </div>
+        
+        
+
+      <!--Card for categories-->
+      <div class="row">
+        <div class="card-columns">
+          <div class="card p-3 mb-5 bg-white rounded">
+            <a href="paintings.html"><img src="img/Paint.JPG" class="card-img-top" alt="Painting category"></a>
+            <div class="card-body"> 
+              <h5><a href="paintings.html" class="card-title">Paintings</a></h5>
+            </div> 
+          </div>
+          <div class="card p-3 mb-5 bg-white rounded">
+            <a href="accessories.html"><img src="img/accessory.jpg" class="card-img-top" alt="Accessories category"></a>
+            <div class="card-body">
+              <h5><a href="accessories.html" class="card-title">Accessories</a></h5>
+            </div>
+          </div>
+          <div class="card p-3 mb-5 bg-white rounded">
+            <a href="jewellery.html"><img src="img/jewellery.jpg" class="card-img-top" alt="Jewellery category"></a>
+            <div class="card-body">
+              <h5><a href="jewellery.html" class="card-title">Jewellery</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TO DO -->
+    <!-- clean up css  -->
+    <div class="container-fluid"  style="background-color: aliceblue;">
+      <div class="row">
+        <div class="col text-center" id="story" >
+          <h2 >Our Story</h2>
+          <p class="pt-2">We are a group of artists based in Edgewater, Chicago. This site was created for the local artists as an accessible venue to display their handmade, 
+            unique creations and customers can purchase locally crafted items. Items can be customized by connecting with the artist through the site.</p>
+            <h5 style="color: #d87683;">Shop small,shop local. Support small businesses</h5>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--Footer-->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 text-center">
+            <h5 class=" text-dark">Connect with us</h5>
+              <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+              <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+          </div>
+          <div class="col-sm-6 text-center text-dark">
+              <i class="fa fa-phone fa-lg text-primary"></i> 1-234-567-8910<br />
+              <i class="fa fa-envelope fa-lg text-primary"></i>neighborhoodmandc@gmail.com
+          </div>
+        </div>
+      </div>
+    </footer> 
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+   
+
+  </body>
+
+</html>
